@@ -30,6 +30,12 @@ wine_data["class"] = wine_data["class"].astype("category")
 # Normalizing "alcohol" column in the wine_data using Min-Max normalization
 wine_data["alcohol"] =  (wine_data["alcohol"] - wine_data["alcohol"].min())/(wine_data["alcohol"].max() - wine_data["alcohol"].min())
 
+# Creating an average quality column in wine_quality_data
+wine_quality_data['average_quality'] = wine_quality_data[['fixed acidity', 'volatile acidity', 'citric acid',
+                                                          'residual sugar', 'chlorides', 'free sulfur dioxide',
+                                                          'total sulfur dioxide', 'density', 'pH', 'sulphates',
+                                                          'alcohol']].mean(axis = 1)
+
 
 # Loading
 # Saving the transformed data as csv file
