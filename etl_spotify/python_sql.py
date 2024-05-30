@@ -1,9 +1,9 @@
 import pyodbc
 
-server = 'DOCENTE_UCB.mssql.somee.com'
-database = 'DOCENTE_UCB'
-username = 'EddyEscalanteU_SQLLogin_1'
-password = 'gp882v1wbz'
+server = 'Mi_DataBase.mssql.somee.com'
+database = 'Mi_DataBase'
+username = 'esteban_SQLLogin_1'
+password = 'doyz7qycgl'
 
 # Establishing a connection to the SQL Server
 connection  = pyodbc.connect('DRIVER={ODBC Driver 17 for SQL Server};\

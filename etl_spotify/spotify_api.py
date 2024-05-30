@@ -13,9 +13,9 @@ class SpotifyAPI:
 
     def __init__(self, client_id, client_secret, user_id):
         """Initialize the SpotifyAPI instance."""
-        self.client_id = client_id
-        self.client_secret = client_secret
-        self.user_id = user_id
+        self.client_id = "ad90ba5206b34e428a7a24bf467e854b"
+        self.client_secret = "2211383cb62f445bb2678128a15cb3db"
+        self.user_id = "estebandlvlang98"
         self.access_token = self._get_access_token()
 
     def _get_request(self, url, headers, params=None):
