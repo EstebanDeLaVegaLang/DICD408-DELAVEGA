@@ -2,10 +2,10 @@ import requests
 import urllib.parse
 
 from datetime import datetime, timedelta
-from flask import flask, redirect, request, jsonify, session
+from flask import Flask, redirect, request, jsonify, session
 
 
-app = flask(__name__)
+app = Flask(__name__)
 app.secret_key = ""
 
 CLIENT_ID = "ad90ba5206b34e428a7a24bf467e854b"
