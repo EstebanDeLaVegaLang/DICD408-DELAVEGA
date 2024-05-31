@@ -14,7 +14,7 @@ connection  = pyodbc.connect('DRIVER={ODBC Driver 17 for SQL Server};\
             
 cursor = connection.cursor()
 
-query = "select * from productos"
+query = "select * from artist"
 cursor.execute(query)
 
 

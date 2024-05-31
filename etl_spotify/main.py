@@ -203,11 +203,11 @@ def load_data_to_database(user_df, playlist_df, track_df, album_df, artist_df, d
 
 
         
-        user_df.to_sql('user', conn, if_exists='replace', index=False)
-        playlist_df.to_sql('playlist', conn, if_exists='replace', index=False)
-        track_df.to_sql('track', conn, if_exists='replace', index=False)
-        album_df.to_sql('album', conn, if_exists='replace', index=False)
-        artist_df.to_sql('artist', conn, if_exists='replace', index=False)
+        #user_df.to_sql('user', conn, if_exists='replace', index=False)
+        #playlist_df.to_sql('playlist', conn, if_exists='replace', index=False)
+        #track_df.to_sql('track', conn, if_exists='replace', index=False)
+        #album_df.to_sql('album', conn, if_exists='replace', index=False)
+        #artist_df.to_sql('artist', conn, if_exists='replace', index=False)
     except pyodbc.Error as e:
         logging.error(f"An error occurred during data insertion: {e}", exc_info=True)
     else:
